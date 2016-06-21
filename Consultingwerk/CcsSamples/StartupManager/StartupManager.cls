@@ -23,10 +23,10 @@
 
 BLOCK-LEVEL ON ERROR UNDO, THROW.
 
-USING Progress.Reflect.* FROM PROPATH.
 USING Ccs.Common.*                               FROM PROPATH .
 USING Consultingwerk.CcsSamples.StartupManager.* FROM PROPATH .
 USING Progress.Lang.*                            FROM PROPATH .
+USING Progress.Reflect.*                         FROM PROPATH .
 
 CLASS Consultingwerk.CcsSamples.StartupManager.StartupManager
     IMPLEMENTS IStartupManager:
@@ -110,6 +110,8 @@ CLASS Consultingwerk.CcsSamples.StartupManager.StartupManager
         DEFINE VARIABLE oType         AS Progress.Lang.Class  NO-UNDO .
         DEFINE VARIABLE oInstanceType AS Progress.Lang.Class  NO-UNDO .
         DEFINE VARIABLE oInstance     AS Progress.Lang.Object NO-UNDO .
+
+        DEFINE BUFFER ttManagerInstances FOR ttManagerInstances .
 
         FOR EACH ttManagers WHERE ttManagers.InitializationSequence > 0:
 
