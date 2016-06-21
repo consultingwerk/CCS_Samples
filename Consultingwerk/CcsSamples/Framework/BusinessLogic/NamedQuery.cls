@@ -145,4 +145,48 @@ CLASS Consultingwerk.CcsSamples.Framework.BusinessLogic.NamedQuery
 
     END CONSTRUCTOR.
 
+    /*------------------------------------------------------------------------------
+        Purpose: Returns the Named Query Parameter Value by name
+        Notes:
+        @param pcParameterName The name of the named query parameter to return
+        @return The IPrimitiveHolder representing the value
+    ------------------------------------------------------------------------------*/
+    METHOD PUBLIC STATIC IPrimitiveHolder ParameterValueByName (poNamedQuery AS INamedQuery,
+                                                                pcParameterName AS CHARACTER):
+
+        DEFINE VARIABLE i AS INTEGER NO-UNDO.
+
+        DO i = 1 TO EXTENT (poNamedQuery:Parameters):
+
+            IF poNamedQuery:Parameters[i]:Name = pcParameterName THEN
+                RETURN poNamedQuery:Parameters[i]:Value .
+
+        END.
+
+        UNDO, THROW NEW AppError (SUBSTITUTE ("Invalid named query parameter: &1", pcParameterName), 0) .
+
+    END METHOD.
+
+    /*------------------------------------------------------------------------------
+        Purpose: Returns the Named Query Parameter Values by name
+        Notes:
+        @param pcParameterName The name of the named query parameter to return
+        @return The IPrimitiveHolder representing the values
+    ------------------------------------------------------------------------------*/
+    METHOD PUBLIC STATIC IPrimitiveArrayHolder ParameterValuesByName (poNamedQuery AS INamedQuery,
+                                                                      pcParameterName AS CHARACTER):
+
+        DEFINE VARIABLE i AS INTEGER NO-UNDO.
+
+        DO i = 1 TO EXTENT (poNamedQuery:Parameters):
+
+            IF poNamedQuery:Parameters[i]:Name = pcParameterName THEN
+                RETURN poNamedQuery:Parameters[i]:Values .
+
+        END.
+
+        UNDO, THROW NEW AppError (SUBSTITUTE ("Invalid named query parameter: &1", pcParameterName), 0) .
+
+    END METHOD.
+
 END CLASS .
