@@ -10,8 +10,8 @@
  *                                                                    *
  **********************************************************************/
 /*------------------------------------------------------------------------
-    File        : ttManagers.i
-    Purpose     : Temp-Table for manager definitions
+    File        : ttServices.i
+    Purpose     : Temp-Table for service definitions
 
     Syntax      :
 
@@ -24,8 +24,8 @@
 
 /* ***************************  Definitions  ************************** */
 
-DEFINE TEMP-TABLE ttManagers NO-UNDO
-    FIELD InitializationSequence AS INTEGER INIT ?
-    FIELD ManagerType            AS CHARACTER
-    FIELD ManagerImplementation  AS CHARACTER
-    INDEX InitializationSequence IS PRIMARY UNIQUE InitializationSequence .
+DEFINE TEMP-TABLE ttServices NO-UNDO
+    FIELD ServiceType           AS CHARACTER
+    FIELD InstanceName          AS CHARACTER
+    FIELD ServiceImplementation AS CHARACTER
+    INDEX ServiceTypeInstanceName IS PRIMARY UNIQUE ServiceType InstanceName .
