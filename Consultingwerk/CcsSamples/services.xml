@@ -10,11 +10,6 @@
     <InstanceName>Matches</InstanceName>
     <ServiceImplementation>Consultingwerk.CcsSamples.BusinessEntity.Euro2016.MatchesBusinessEntity</ServiceImplementation>
   </ttServicesRow>
-  <ttServicesRow>
-    <ServiceType>Ccs.BusinessLogic.IBusinessEntity</ServiceType>
-    <InstanceName>SalesRep</InstanceName>
-    <ServiceImplementation>Consultingwerk.CcsSamples.BusinessEntity.SalesRep.SalesRepBusinessEntity</ServiceImplementation>
-  </ttServicesRow>
   
   <ttServicesRow>
     <ServiceType>Consultingwerk.CcsSamples.CustomService.IEuro2016ResultService</ServiceType>

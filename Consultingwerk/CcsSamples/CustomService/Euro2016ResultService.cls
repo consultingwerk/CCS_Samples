@@ -21,6 +21,7 @@
 
 BLOCK-LEVEL ON ERROR UNDO, THROW.
 
+USING Consultingwerk.CcsSamples.BusinessEntity.* FROM PROPATH.
 USING Ccs.BusinessLogic.*                                 FROM PROPATH .
 USING Ccs.Common.*                                        FROM PROPATH .
 USING Consultingwerk.*                                    FROM PROPATH .
@@ -43,7 +44,7 @@ CLASS Consultingwerk.CcsSamples.CustomService.Euro2016ResultService
 
         DEFINE VARIABLE oMatches AS IBusinessEntity NO-UNDO .
 
-        oMatches = CAST (Application:ServiceManager:getService(GET-CLASS (IBusinessEntity), "Matches"), IBusinessEntity) .
+        oMatches = CAST (Application:ServiceManager:getService(GET-CLASS (IBusinessEntity), BusinessEntities:Matches:ToString()), IBusinessEntity) .
 
         oMatches:getData (NEW GetDataRequest (NEW NamedQuery ("date", "date", NEW DateHolder (pdtDate))),
                           OUTPUT DATASET dsMatches BY-REFERENCE) .
@@ -62,7 +63,7 @@ CLASS Consultingwerk.CcsSamples.CustomService.Euro2016ResultService
 
         DEFINE VARIABLE oMatches AS IBusinessEntity NO-UNDO .
 
-        oMatches = CAST (Application:ServiceManager:getService(GET-CLASS (IBusinessEntity), "Matches"), IBusinessEntity) .
+        oMatches = CAST (Application:ServiceManager:getService(GET-CLASS (IBusinessEntity), BusinessEntities:Matches:ToString()), IBusinessEntity) .
 
         oMatches:getData (NEW GetDataRequest (NEW NamedQuery ("team", "team", NEW CharacterHolder (poTeam:ToString()))),
                           OUTPUT DATASET dsMatches BY-REFERENCE) .
@@ -89,7 +90,7 @@ CLASS Consultingwerk.CcsSamples.CustomService.Euro2016ResultService
 
         DEFINE VARIABLE oMatches AS IBusinessEntity NO-UNDO .
 
-        oMatches = CAST (Application:ServiceManager:getService(GET-CLASS (IBusinessEntity), "Matches"), IBusinessEntity) .
+        oMatches = CAST (Application:ServiceManager:getService(GET-CLASS (IBusinessEntity), BusinessEntities:Matches:ToString()), IBusinessEntity) .
 
         oMatches:getData (NEW GetDataRequest (NEW NamedQuery ("today")),
                           OUTPUT DATASET dsMatches BY-REFERENCE) .
@@ -103,7 +104,7 @@ CLASS Consultingwerk.CcsSamples.CustomService.Euro2016ResultService
      * Notes:
      * @return The MatchResult array
      */
-    METHOD PUBLIC MatchResult EXTENT MatchResultExtent():
+    METHOD PRIVATE MatchResult EXTENT MatchResultExtent():
 
         DEFINE QUERY qQuery FOR eMatches .
 
