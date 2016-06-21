@@ -38,16 +38,6 @@ CLASS Consultingwerk.CcsSamples.StartupManager.StartupManager
         FIELD ManagerImplementation AS Progress.Lang.Object
         INDEX ManagerType IS PRIMARY UNIQUE ManagerType .
 
-    DEFINE PUBLIC PROPERTY ServiceManager AS Ccs.Common.IServiceManager NO-UNDO
-    GET.
-    SET.
-
-    DEFINE PUBLIC PROPERTY SessionManager AS Ccs.Common.ISessionManager NO-UNDO
-    GET.
-    SET.
-
-
-
     /**
      * Purpose: Default constructor for the Startup Manager
      * Notes:
