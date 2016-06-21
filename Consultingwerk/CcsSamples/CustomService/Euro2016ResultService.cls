@@ -21,10 +21,10 @@
 
 BLOCK-LEVEL ON ERROR UNDO, THROW.
 
-USING Consultingwerk.CcsSamples.BusinessEntity.* FROM PROPATH.
 USING Ccs.BusinessLogic.*                                 FROM PROPATH .
 USING Ccs.Common.*                                        FROM PROPATH .
 USING Consultingwerk.*                                    FROM PROPATH .
+USING Consultingwerk.CcsSamples.BusinessEntity.*          FROM PROPATH .
 USING Consultingwerk.CcsSamples.CustomService.*           FROM PROPATH .
 USING Consultingwerk.CcsSamples.Framework.BusinessLogic.* FROM PROPATH .
 USING Progress.Lang.*                                     FROM PROPATH .
@@ -78,6 +78,7 @@ CLASS Consultingwerk.CcsSamples.CustomService.Euro2016ResultService
      *
      */
     METHOD PUBLIC VOID initialize():
+        /* noop */
     END METHOD.
 
     /**
