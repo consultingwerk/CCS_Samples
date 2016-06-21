@@ -11,7 +11,8 @@
  **********************************************************************/
 /*------------------------------------------------------------------------
     File        : Euro2016MatchesBusinessEntity
-    Purpose     :
+    Purpose     : Sample for a Business Entity using an XML file as it's
+                  data source
     Syntax      :
     Description :
     Author(s)   : Mike Fechner / Consultingwerk Ltd.
@@ -21,11 +22,10 @@
 
 BLOCK-LEVEL ON ERROR UNDO, THROW.
 
-USING Consultingwerk.CcsSamples.Framework.BusinessLogic.* FROM PROPATH.
-USING Consultingwerk.* FROM PROPATH.
-USING Consultingwerk.CcsSamples.Framework.BusinessLogic.GetResultCountResponse.
-USING Ccs.BusinessLogic.*                                        FROM PROPATH  .
+USING Consultingwerk.*                                           FROM PROPATH.
 USING Consultingwerk.CcsSamples.BusinessEntity.Euro2016Matches.* FROM PROPATH .
+USING Consultingwerk.CcsSamples.Framework.BusinessLogic.*        FROM PROPATH .
+USING Ccs.BusinessLogic.*                                        FROM PROPATH  .
 USING Progress.Lang.*                                            FROM PROPATH .
 
 CLASS Consultingwerk.CcsSamples.BusinessEntity.Euro2016.MatchesBusinessEntity
@@ -39,8 +39,14 @@ CLASS Consultingwerk.CcsSamples.BusinessEntity.Euro2016.MatchesBusinessEntity
     // Data access query
     DEFINE QUERY qMatches FOR ttMatches .
 
+    /**
+     * Purpose: Default constructor for the MatchesBusinessEntity class
+     * Notes:
+     */
     CONSTRUCTOR PUBLIC MatchesBusinessEntity ():
         SUPER ().
+
+        /* noop */
 
     END CONSTRUCTOR.
 
@@ -64,7 +70,6 @@ CLASS Consultingwerk.CcsSamples.BusinessEntity.Euro2016.MatchesBusinessEntity
         END.
 
     END METHOD.
-
 
     /**
      * Purpose: Opens a named query
