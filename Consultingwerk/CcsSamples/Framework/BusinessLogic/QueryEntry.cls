@@ -8,7 +8,7 @@
     Notes       :
   ----------------------------------------------------------------------*/
 
-ROUTINE-LEVEL ON ERROR UNDO, THROW.
+BLOCK-LEVEL ON ERROR UNDO, THROW.
 
 USING Ccs.BusinessLogic.* FROM PROPATH .
 USING Progress.Lang.*     FROM PROPATH .

@@ -21,7 +21,7 @@
                   startup parameter
   ----------------------------------------------------------------------*/
 
-ROUTINE-LEVEL ON ERROR UNDO, THROW.
+BLOCK-LEVEL ON ERROR UNDO, THROW.
 
 USING CCS.Common.*                               FROM PROPATH .
 USING Consultingwerk.CcsSamples.ServiceManager.* FROM PROPATH .
