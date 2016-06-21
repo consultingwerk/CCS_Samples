@@ -1,0 +1,8 @@
+<?xml version="1.0"?>
+<ttManagers xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
+  <ttManagersRow>
+    <InitializationSequence>1</InitializationSequence>
+    <ManagerType>CCS.Common.IServiceManager</ManagerType>
+    <ManagerImplementation>Consultingwerk.CcsSamples.ServiceManager.ServiceManager</ManagerImplementation>
+  </ttManagersRow>
+</ttManagers>
