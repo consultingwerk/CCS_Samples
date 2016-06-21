@@ -55,11 +55,56 @@ CLASS Consultingwerk.CcsSamples.Framework.BusinessLogic.GetDataRequest
      * Notes:
      *
      */
-    CONSTRUCTOR PUBLIC GetDataRequest (poTableRequest AS IGetDataTableRequest):
+    CONSTRUCTOR PUBLIC GetDataRequest (poTableRequest1 AS IGetDataTableRequest):
 
-        DEFINE VARIABLE oTableRequests AS IGetDataTableRequest EXTENT 1 NO-UNDO .
+        ASSIGN EXTENT (THIS-OBJECT:TableRequests) = 1
 
-        ASSIGN THIS-OBJECT:TableRequests[1] = oTableRequests .
+               THIS-OBJECT:TableRequests[1] = poTableRequest1 .
+
+    END CONSTRUCTOR.
+
+    /**
+     * Purpose:
+     * Notes:
+     *
+     */
+    CONSTRUCTOR PUBLIC GetDataRequest (poTableRequest1 AS IGetDataTableRequest,
+                                       poTableRequest2 AS IGetDataTableRequest):
+
+        ASSIGN EXTENT (THIS-OBJECT:TableRequests) = 2
+
+               THIS-OBJECT:TableRequests[1] = poTableRequest1
+               THIS-OBJECT:TableRequests[2] = poTableRequest2
+               .
+
+    END CONSTRUCTOR.
+
+    /**
+     * Purpose:
+     * Notes:
+     *
+     */
+    CONSTRUCTOR PUBLIC GetDataRequest (poTableRequest1 AS IGetDataTableRequest,
+                                       poTableRequest2 AS IGetDataTableRequest,
+                                       poTableRequest3 AS IGetDataTableRequest):
+
+        ASSIGN EXTENT (THIS-OBJECT:TableRequests) = 3
+
+               THIS-OBJECT:TableRequests[1] = poTableRequest1
+               THIS-OBJECT:TableRequests[2] = poTableRequest2
+               THIS-OBJECT:TableRequests[3] = poTableRequest3
+               .
+
+    END CONSTRUCTOR.
+
+    /**
+     * Purpose:
+     * Notes:
+     *
+     */
+    CONSTRUCTOR PUBLIC GetDataRequest (poNamedQuery AS INamedQuery):
+
+        ASSIGN THIS-OBJECT:NamedQuery = poNamedQuery .
 
     END CONSTRUCTOR.
 
