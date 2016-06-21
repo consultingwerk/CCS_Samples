@@ -1,0 +1,533 @@
+<?xml version="1.0"?>
+<ttMatches xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
+  <ttMatchesRow>
+    <Order>1</Order>
+    <Location>SaintDenis</Location>
+    <Date>2016-06-10</Date>
+    <Stage>Group</Stage>
+    <HomeTeam>France</HomeTeam>
+    <GuestTeam>Romania</GuestTeam>
+    <HomeScore>2</HomeScore>
+    <GuestScore>1</GuestScore>
+  </ttMatchesRow>
+  
+  <ttMatchesRow>
+    <Order>2</Order>
+    <Location>Lens</Location>
+    <Date>2016-06-11</Date>
+    <Stage>Group</Stage>
+    <HomeTeam>Albania</HomeTeam>
+    <GuestTeam>Switzerland</GuestTeam>
+    <HomeScore>0</HomeScore>
+    <GuestScore>1</GuestScore>
+  </ttMatchesRow>
+   <ttMatchesRow>
+    <Order>3</Order>
+    <Location>Bordeaux</Location>
+    <Date>2016-06-11</Date>
+    <Stage>Group</Stage>
+    <HomeTeam>Wales</HomeTeam>
+    <GuestTeam>Slovakia</GuestTeam>
+    <HomeScore>2</HomeScore>
+    <GuestScore>1</GuestScore>
+  </ttMatchesRow>
+  <ttMatchesRow>
+    <Order>4</Order>
+    <Location>SaintDenis</Location>
+    <Date>2016-06-11</Date>
+    <Stage>Group</Stage>
+    <HomeTeam>England</HomeTeam>
+    <GuestTeam>Russia</GuestTeam>
+    <HomeScore>1</HomeScore>
+    <GuestScore>1</GuestScore>
+  </ttMatchesRow>
+  
+  <ttMatchesRow>
+    <Order>5</Order>
+    <Location>Paris</Location>
+    <Date>2016-06-12</Date>
+    <Stage>Group</Stage>
+    <HomeTeam>Turkey</HomeTeam>
+    <GuestTeam>Croatia</GuestTeam>
+    <HomeScore>0</HomeScore>
+    <GuestScore>1</GuestScore>
+  </ttMatchesRow>
+   <ttMatchesRow>
+    <Order>6</Order>
+    <Location>Nice</Location>
+    <Date>2016-06-12</Date>
+    <Stage>Group</Stage>
+    <HomeTeam>Poland</HomeTeam>
+    <GuestTeam>NorthernIreland</GuestTeam>
+    <HomeScore>1</HomeScore>
+    <GuestScore>0</GuestScore>
+  </ttMatchesRow>
+  <ttMatchesRow>
+    <Order>7</Order>
+    <Location>Lille</Location>
+    <Date>2016-06-12</Date>
+    <Stage>Group</Stage>
+    <HomeTeam>Germany</HomeTeam>
+    <GuestTeam>Ukraine</GuestTeam>
+    <HomeScore>2</HomeScore>
+    <GuestScore>0</GuestScore>
+  </ttMatchesRow>
+  
+  <ttMatchesRow>
+    <Order>8</Order>
+    <Location>Toulouse</Location>
+    <Date>2016-06-13</Date>
+    <Stage>Group</Stage>
+    <HomeTeam>Spain</HomeTeam>
+    <GuestTeam>CzechRepublic</GuestTeam>
+    <HomeScore>1</HomeScore>
+    <GuestScore>0</GuestScore>
+  </ttMatchesRow>
+   <ttMatchesRow>
+    <Order>9</Order>
+    <Location>SaintDenis</Location>
+    <Date>2016-06-13</Date>
+    <Stage>Group</Stage>
+    <HomeTeam>RepublicOfIreland</HomeTeam>
+    <GuestTeam>Sweden</GuestTeam>
+    <HomeScore>1</HomeScore>
+    <GuestScore>1</GuestScore>
+  </ttMatchesRow>
+  <ttMatchesRow>
+    <Order>10</Order>
+    <Location>Lyon</Location>
+    <Date>2016-06-13</Date>
+    <Stage>Group</Stage>
+    <HomeTeam>Belgium</HomeTeam>
+    <GuestTeam>Italy</GuestTeam>
+    <HomeScore>0</HomeScore>
+    <GuestScore>2</GuestScore>
+  </ttMatchesRow>
+    
+  <ttMatchesRow>
+    <Order>11</Order>
+    <Location>Bordeaux</Location>
+    <Date>2016-06-14</Date>
+    <Stage>Group</Stage>
+    <HomeTeam>Austria</HomeTeam>
+    <GuestTeam>Hungary</GuestTeam>
+    <HomeScore>1</HomeScore>
+    <GuestScore>0</GuestScore>
+  </ttMatchesRow>
+   <ttMatchesRow>
+    <Order>12</Order>
+    <Location>SaintEtienne</Location>
+    <Date>2016-06-14</Date>
+    <Stage>Group</Stage>
+    <HomeTeam>Portugal</HomeTeam>
+    <GuestTeam>Iceland</GuestTeam>
+    <HomeScore>1</HomeScore>
+    <GuestScore>1</GuestScore>
+  </ttMatchesRow>  
+  
+  
+   <ttMatchesRow>
+    <Order>13</Order>
+    <Location>Lille</Location>
+    <Date>2016-06-15</Date>
+    <Stage>Group</Stage>
+    <HomeTeam>Russia</HomeTeam>
+    <GuestTeam>Slovakia</GuestTeam>
+    <HomeScore>1</HomeScore>
+    <GuestScore>2</GuestScore>
+  </ttMatchesRow>
+   <ttMatchesRow>
+    <Order>14</Order>
+    <Location>Paris</Location>
+    <Date>2016-06-15</Date>
+    <Stage>Group</Stage>
+    <HomeTeam>Romania</HomeTeam>
+    <GuestTeam>Switzerland</GuestTeam>
+    <HomeScore>1</HomeScore>
+    <GuestScore>1</GuestScore>
+  </ttMatchesRow>
+  <ttMatchesRow>
+    <Order>15</Order>
+    <Location>Marseille</Location>
+    <Date>2016-06-15</Date>
+    <Stage>Group</Stage>
+    <HomeTeam>France</HomeTeam>
+    <GuestTeam>Albania</GuestTeam>
+    <HomeScore>2</HomeScore>
+    <GuestScore>0</GuestScore>
+  </ttMatchesRow>
+    
+   <ttMatchesRow>
+    <Order>16</Order>
+    <Location>Lens</Location>
+    <Date>2016-06-16</Date>
+    <Stage>Group</Stage>
+    <HomeTeam>England</HomeTeam>
+    <GuestTeam>Wales</GuestTeam>
+    <HomeScore>2</HomeScore>
+    <GuestScore>1</GuestScore>
+  </ttMatchesRow>
+   <ttMatchesRow>
+    <Order>17</Order>
+    <Location>Lyon</Location>
+    <Date>2016-06-16</Date>
+    <Stage>Group</Stage>
+    <HomeTeam>Ukraine</HomeTeam>
+    <GuestTeam>NorthernIreland</GuestTeam>
+    <HomeScore>0</HomeScore>
+    <GuestScore>2</GuestScore>
+  </ttMatchesRow>
+  <ttMatchesRow>
+    <Order>18</Order>
+    <Location>SaintDenis</Location>
+    <Date>2016-06-16</Date>
+    <Stage>Group</Stage>
+    <HomeTeam>Germany</HomeTeam>
+    <GuestTeam>Poland</GuestTeam>
+    <HomeScore>0</HomeScore>
+    <GuestScore>0</GuestScore>
+  </ttMatchesRow>  
+
+   <ttMatchesRow>
+    <Order>19</Order>
+    <Location>Toulouse</Location>
+    <Date>2016-06-17</Date>
+    <Stage>Group</Stage>
+    <HomeTeam>Italy</HomeTeam>
+    <GuestTeam>Sweden</GuestTeam>
+    <HomeScore>1</HomeScore>
+    <GuestScore>0</GuestScore>
+  </ttMatchesRow>
+   <ttMatchesRow>
+    <Order>20</Order>
+    <Location>SaintEtienne</Location>
+    <Date>2016-06-17</Date>
+    <Stage>Group</Stage>
+    <HomeTeam>CzechRepublic</HomeTeam>
+    <GuestTeam>Croatia</GuestTeam>
+    <HomeScore>2</HomeScore>
+    <GuestScore>2</GuestScore>
+  </ttMatchesRow>
+  <ttMatchesRow>
+    <Order>21</Order>
+    <Location>Nice</Location>
+    <Date>2016-06-17</Date>
+    <Stage>Group</Stage>
+    <HomeTeam>Spain</HomeTeam>
+    <GuestTeam>turkey</GuestTeam>
+    <HomeScore>3</HomeScore>
+    <GuestScore>0</GuestScore>
+  </ttMatchesRow>  
+   
+   <ttMatchesRow>
+    <Order>22</Order>
+    <Location>Bordeaux</Location>
+    <Date>2016-06-18</Date>
+    <Stage>Group</Stage>
+    <HomeTeam>Belgium</HomeTeam>
+    <GuestTeam>RepublicOfIreland</GuestTeam>
+    <HomeScore>3</HomeScore>
+    <GuestScore>0</GuestScore>
+  </ttMatchesRow>
+   <ttMatchesRow>
+    <Order>23</Order>
+    <Location>Marseille</Location>
+    <Date>2016-06-18</Date>
+    <Stage>Group</Stage>
+    <HomeTeam>Iceland</HomeTeam>
+    <GuestTeam>Hungary</GuestTeam>
+    <HomeScore>1</HomeScore>
+    <GuestScore>1</GuestScore>
+  </ttMatchesRow>
+  <ttMatchesRow>
+    <Order>24</Order>
+    <Location>Nice</Location>
+    <Date>2016-06-18</Date>
+    <Stage>Group</Stage>
+    <HomeTeam>Portugal</HomeTeam>
+    <GuestTeam>Austria</GuestTeam>
+    <HomeScore>0</HomeScore>
+    <GuestScore>0</GuestScore>
+  </ttMatchesRow>  
+        
+   <ttMatchesRow>
+    <Order>25</Order>
+    <Location>Lyon</Location>
+    <Date>2016-06-19</Date>
+    <Stage>Group</Stage>
+    <HomeTeam>Romania</HomeTeam>
+    <GuestTeam>Albania</GuestTeam>
+    <HomeScore>0</HomeScore>
+    <GuestScore>1</GuestScore>
+  </ttMatchesRow>
+  <ttMatchesRow>
+    <Order>26</Order>
+    <Location>Lille</Location>
+    <Date>2016-06-19</Date>
+    <Stage>Group</Stage>
+    <HomeTeam>Switzerland</HomeTeam>
+    <GuestTeam>France</GuestTeam>
+    <HomeScore>0</HomeScore>
+    <GuestScore>0</GuestScore>
+  </ttMatchesRow>  
+        
+   <ttMatchesRow>
+    <Order>27</Order>
+    <Location>Toulouse</Location>
+    <Date>2016-06-20</Date>
+    <Stage>Group</Stage>
+    <HomeTeam>Russia</HomeTeam>
+    <GuestTeam>Wales</GuestTeam>
+    <HomeScore>0</HomeScore>
+    <GuestScore>3</GuestScore>
+  </ttMatchesRow>
+  <ttMatchesRow>
+    <Order>28</Order>
+    <Location>SaintEtienne</Location>
+    <Date>2016-06-20</Date>
+    <Stage>Group</Stage>
+    <HomeTeam>Slovakia</HomeTeam>
+    <GuestTeam>England</GuestTeam>
+    <HomeScore>0</HomeScore>
+    <GuestScore>0</GuestScore>
+  </ttMatchesRow>  
+    
+   <ttMatchesRow>
+    <Order>29</Order>
+    <Location>Marseille</Location>
+    <Date>2016-06-21</Date>
+    <Stage>Group</Stage>
+    <HomeTeam>Ukraine</HomeTeam>
+    <GuestTeam>Poland</GuestTeam>
+    <HomeScore>0</HomeScore>
+    <GuestScore>3</GuestScore>
+  </ttMatchesRow>
+  <ttMatchesRow>
+    <Order>30</Order>
+    <Location>Paris</Location>
+    <Date>2016-06-21</Date>
+    <Stage>Group</Stage>
+    <HomeTeam>NorthernIreland</HomeTeam>
+    <GuestTeam>Germany</GuestTeam>
+    <HomeScore>0</HomeScore>
+    <GuestScore>1</GuestScore>
+  </ttMatchesRow>  
+   <ttMatchesRow>
+    <Order>31</Order>
+    <Location>Lens</Location>
+    <Date>2016-06-21</Date>
+    <Stage>Group</Stage>
+    <HomeTeam>CzechRepublic</HomeTeam>
+    <GuestTeam>Turkey</GuestTeam>
+    <HomeScore>0</HomeScore>
+    <GuestScore>2</GuestScore>
+  </ttMatchesRow>
+  <ttMatchesRow>
+    <Order>32</Order>
+    <Location>Bordeaux</Location>
+    <Date>2016-06-21</Date>
+    <Stage>Group</Stage>
+    <HomeTeam>Croatia</HomeTeam>
+    <GuestTeam>Spain</GuestTeam>
+    <HomeScore>2</HomeScore>
+    <GuestScore>1</GuestScore>
+  </ttMatchesRow>  
+        
+  <ttMatchesRow>
+    <Order>33</Order>
+    <Location>SaintDenis</Location>
+    <Date>2016-06-22</Date>
+    <Stage>Group</Stage>
+    <HomeTeam>Iceland</HomeTeam>
+    <GuestTeam>Austria</GuestTeam>
+    <HomeScore />
+    <GuestScore />
+  </ttMatchesRow>
+  <ttMatchesRow>
+    <Order>34</Order>
+    <Location>Lyon</Location>
+    <Date>2016-06-22</Date>
+    <Stage>Group</Stage>
+    <HomeTeam>Hungary</HomeTeam>
+    <GuestTeam>Portugal</GuestTeam>
+    <HomeScore />
+    <GuestScore />
+  </ttMatchesRow>  
+   <ttMatchesRow>
+    <Order>35</Order>
+    <Location>Lille</Location>
+    <Date>2016-06-22</Date>
+    <Stage>Group</Stage>
+    <HomeTeam>Italy</HomeTeam>
+    <GuestTeam>RepublicOfIreland</GuestTeam>
+    <HomeScore />
+    <GuestScore />
+  </ttMatchesRow>
+  <ttMatchesRow>
+    <Order>36</Order>
+    <Location>Nice</Location>
+    <Date>2016-06-22</Date>
+    <Stage>Group</Stage>
+    <HomeTeam>Sweden</HomeTeam>
+    <GuestTeam>Belgium</GuestTeam>
+    <HomeScore />
+    <GuestScore />
+  </ttMatchesRow>  
+            
+  <ttMatchesRow>
+    <Order>37</Order>
+    <Location>SaintEtienne</Location>
+    <Date>2016-06-25</Date>
+    <Stage>RoundOf16</Stage>
+    <HomeTeam>Switzerland</HomeTeam>
+    <GuestTeam>Poland</GuestTeam>
+    <HomeScore />
+    <GuestScore />
+  </ttMatchesRow>
+  <ttMatchesRow>
+    <Order>38</Order>
+    <Location>Paris</Location>
+    <Date>2016-06-25</Date>
+    <Stage>RoundOf16</Stage>
+    <HomeTeam>Wales</HomeTeam>
+    <GuestTeam />
+    <HomeScore />
+    <GuestScore />
+  </ttMatchesRow>  
+   <ttMatchesRow>
+    <Order>39</Order>
+    <Location>Lens</Location>
+    <Date>2016-06-25</Date>
+    <Stage>RoundOf16</Stage>
+    <HomeTeam />
+    <GuestTeam />
+    <HomeScore />
+    <GuestScore />
+  </ttMatchesRow>    
+    
+  <ttMatchesRow>
+    <Order>40</Order>
+    <Location>Lyon</Location>
+    <Date>2016-06-26</Date>
+    <Stage>RoundOf16</Stage>
+    <HomeTeam>France</HomeTeam>
+    <GuestTeam />
+    <HomeScore />
+    <GuestScore />
+  </ttMatchesRow>
+  <ttMatchesRow>
+    <Order>41</Order>
+    <Location>Lille</Location>
+    <Date>2016-06-26</Date>
+    <Stage>RoundOf16</Stage>
+    <HomeTeam>Germany</HomeTeam>
+    <GuestTeam />
+    <HomeScore />
+    <GuestScore />
+  </ttMatchesRow>  
+   <ttMatchesRow>
+    <Order>42</Order>
+    <Location>Toulouse</Location>
+    <Date>2016-06-26</Date>
+    <Stage>RoundOf16</Stage>
+    <HomeTeam />
+    <GuestTeam />
+    <HomeScore />
+    <GuestScore />
+  </ttMatchesRow>    
+
+  <ttMatchesRow>
+    <Order>43</Order>
+    <Location>SaintDenis</Location>
+    <Date>2016-06-27</Date>
+    <Stage>RoundOf16</Stage>
+    <HomeTeam>Italy</HomeTeam>
+    <GuestTeam />
+    <HomeScore />
+    <GuestScore />
+  </ttMatchesRow>
+  <ttMatchesRow>
+    <Order>44</Order>
+    <Location>Nice</Location>
+    <Date>2016-06-27</Date>
+    <Stage>RoundOf16</Stage>
+    <HomeTeam>England</HomeTeam>
+    <GuestTeam />
+    <HomeScore />
+    <GuestScore />
+  </ttMatchesRow>  
+        
+  <ttMatchesRow>
+    <Order>45</Order>
+    <Location>Marseille</Location>
+    <Date>2016-06-30</Date>
+    <Stage>QuarterFinal</Stage>
+    <HomeTeam />
+    <GuestTeam />
+    <HomeScore />
+    <GuestScore />
+  </ttMatchesRow>
+  <ttMatchesRow>
+    <Order>46</Order>
+    <Location>Lille</Location>
+    <Date>2016-07-01</Date>
+    <Stage>QuarterFinal</Stage>
+    <HomeTeam />
+    <GuestTeam />
+    <HomeScore />
+    <GuestScore />
+  </ttMatchesRow>
+  <ttMatchesRow>
+    <Order>47</Order>
+    <Location>Bordeaux</Location>
+    <Date>2016-07-02</Date>
+    <Stage>QuarterFinal</Stage>
+    <HomeTeam />
+    <GuestTeam />
+    <HomeScore />
+    <GuestScore />
+  </ttMatchesRow>
+  <ttMatchesRow>
+    <Order>48</Order>
+    <Location>SaintDenis</Location>
+    <Date>2016-07-03</Date>
+    <Stage>QuarterFinal</Stage>
+    <HomeTeam />
+    <GuestTeam />
+    <HomeScore />
+    <GuestScore />
+  </ttMatchesRow>  
+
+  <ttMatchesRow>
+    <Order>49</Order>
+    <Location>Lyon</Location>
+    <Date>2016-07-06</Date>
+    <Stage>SemiFinal</Stage>
+    <HomeTeam />
+    <GuestTeam />
+    <HomeScore />
+    <GuestScore />
+  </ttMatchesRow>  
+  <ttMatchesRow>
+    <Order>50</Order>
+    <Location>Marseille</Location>
+    <Date>2016-07-07</Date>
+    <Stage>SemiFinal</Stage>
+    <HomeTeam />
+    <GuestTeam />
+    <HomeScore />
+    <GuestScore />
+  </ttMatchesRow>      
+
+  <ttMatchesRow>
+    <Order>51</Order>
+    <Location>SaintDenis</Location>
+    <Date>2016-07-10</Date>
+    <Stage>Final</Stage>
+    <HomeTeam />
+    <GuestTeam />
+    <HomeScore />
+    <GuestScore />
+  </ttMatchesRow>      
+
+</ttMatches>
