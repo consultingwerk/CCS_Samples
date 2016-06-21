@@ -43,9 +43,8 @@ INTERFACE Consultingwerk.CcsSamples.CustomService.IEuro2016ResultService
     METHOD PUBLIC MatchResult EXTENT GetMatchResultsByTeam (poTeam AS TeamEnum).
 
     /**
-     * Purpose: Returns the match results of the given team
+     * Purpose: Returns the match results of today
      * Notes:
-     * @param poTeam The team to return results from
      * @return The array of MatchResult's
      */
     METHOD PUBLIC MatchResult EXTENT GetTodaysMatchResults ().

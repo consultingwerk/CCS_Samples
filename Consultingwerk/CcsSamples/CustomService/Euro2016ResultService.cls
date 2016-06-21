@@ -82,9 +82,8 @@ CLASS Consultingwerk.CcsSamples.CustomService.Euro2016ResultService
     END METHOD.
 
     /**
-     * Purpose: Returns the match results of the given team
+     * Purpose: Returns the match results of today
      * Notes:
-     * @param poTeam The team to return results from
      * @return The array of MatchResult's
      */
     METHOD PUBLIC MatchResult EXTENT GetTodaysMatchResults ():
