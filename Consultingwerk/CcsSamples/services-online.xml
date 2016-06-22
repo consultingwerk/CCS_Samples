@@ -1,0 +1,21 @@
+<?xml version="1.0"?>
+<ttServices xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
+  <ttServicesRow>
+    <ServiceType>Ccs.BusinessLogic.IBusinessEntity</ServiceType>
+    <InstanceName>Customer</InstanceName>
+    <ServiceImplementation>Consultingwerk.CcsSamples.BusinessEntity.Customer.CustomerBusinessEntity</ServiceImplementation>
+  </ttServicesRow>
+  <ttServicesRow>
+    <ServiceType>Ccs.BusinessLogic.IBusinessEntity</ServiceType>
+    <InstanceName>Matches</InstanceName>
+    <ServiceImplementation>Consultingwerk.CcsSamples.BusinessEntity.Euro2016.MatchesBusinessEntity</ServiceImplementation>
+  </ttServicesRow>
+  
+  <ttServicesRow>
+    <ServiceType>Consultingwerk.CcsSamples.CustomService.IEuro2016ResultService</ServiceType>
+    <InstanceName />
+    <ServiceImplementation>Consultingwerk.CcsSamples.CustomService.OnlineEuro2016ResultService</ServiceImplementation>
+  </ttServicesRow>
+  
+  
+</ttServices>

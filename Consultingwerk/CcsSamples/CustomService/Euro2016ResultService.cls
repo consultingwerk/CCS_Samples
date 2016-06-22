@@ -73,15 +73,6 @@ CLASS Consultingwerk.CcsSamples.CustomService.Euro2016ResultService
     END METHOD.
 
     /**
-     * Purpose:
-     * Notes:
-     *
-     */
-    METHOD PUBLIC VOID initialize():
-        /* noop */
-    END METHOD.
-
-    /**
      * Purpose: Returns the match results of today
      * Notes:
      * @return The array of MatchResult's
@@ -97,6 +88,15 @@ CLASS Consultingwerk.CcsSamples.CustomService.Euro2016ResultService
 
         RETURN THIS-OBJECT:MatchResultExtent() .
 
+    END METHOD.
+
+    /**
+     * Purpose:
+     * Notes:
+     *
+     */
+    METHOD PUBLIC VOID initialize():
+        /* noop */
     END METHOD.
 
     /**

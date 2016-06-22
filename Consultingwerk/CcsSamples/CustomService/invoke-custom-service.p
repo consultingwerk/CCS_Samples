@@ -28,8 +28,9 @@ RUN Consultingwerk/CcsSamples/boot.p .
 
 oMatchesService = CAST (Application:ServiceManager:getService(GET-CLASS (IEuro2016ResultService)), IEuro2016ResultService) .
 
-
 oResults = oMatchesService:GetTodaysMatchResults().
+
+// oResults = oMatchesService:GetMatchResultsByTeam(TeamEnum:Germany) .
 
 MESSAGE "today:" EXTENT (oResults)
     VIEW-AS ALERT-BOX.
