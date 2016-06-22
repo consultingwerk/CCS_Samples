@@ -101,7 +101,7 @@ CLASS Consultingwerk.CcsSamples.CustomService.MatchResult:
         ASSIGN cReturn = SUBSTITUTE ("Game &1, Date: &2, Location: &3, Stage: &4",
                                      THIS-OBJECT:Order,
                                      THIS-OBJECT:Date,
-                                     THIS-OBJECT:Location,
+                                     THIS-OBJECT:Location:ToString(),
                                      THIS-OBJECT:Stage:ToString()) .
 
         IF VALID-OBJECT (THIS-OBJECT:HomeTeam) OR
