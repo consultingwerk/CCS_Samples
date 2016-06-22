@@ -10,7 +10,7 @@
   ----------------------------------------------------------------------*/
 
 USING Ccs.BusinessLogic.*                                 FROM PROPATH .
-USING Consultingwerk.CcsSamples.Framework.BusinessLogic.* FROM PROPATH.
+USING Consultingwerk.CcsSamples.Framework.BusinessLogic.* FROM PROPATH .
 USING Progress.Lang.*                                     FROM PROPATH .
 
 CLASS Consultingwerk.CcsSamples.Framework.BusinessLogic.GetDataRequest
@@ -40,7 +40,6 @@ CLASS Consultingwerk.CcsSamples.Framework.BusinessLogic.GetDataRequest
     DEFINE PUBLIC PROPERTY TableRequests AS IGetDataTableRequest EXTENT NO-UNDO
     GET.
     SET.
-
 
     /**
      * Purpose:
