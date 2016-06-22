@@ -75,7 +75,7 @@ CLASS Consultingwerk.CcsSamples.CustomService.OnlineEuro2016ResultService
             oFixture = oFixtures:GetJsonObject(i) .
 
             CREATE eMatches .
-            ASSIGN eMatches.Order     = 1
+            ASSIGN eMatches.Order     = i
                    eMatches.Date      = DATE (oFixture:GetDatetime("date":U))
                    eMatches.HomeTeam  = REPLACE (oFixture:GetCharacter("homeTeamName":U), " ", "")
                    eMatches.GuestTeam = REPLACE (oFixture:GetCharacter("awayTeamName":U), " ", "")
