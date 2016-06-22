@@ -340,8 +340,8 @@
     <Stage>Group</Stage>
     <HomeTeam>Iceland</HomeTeam>
     <GuestTeam>Austria</GuestTeam>
-    <HomeScore />
-    <GuestScore />
+    <HomeScore>2</HomeScore>
+    <GuestScore>1</GuestScore>
   </ttMatchesRow>
   <ttMatchesRow>
     <Order>34</Order>
@@ -350,8 +350,8 @@
     <Stage>Group</Stage>
     <HomeTeam>Hungary</HomeTeam>
     <GuestTeam>Portugal</GuestTeam>
-    <HomeScore />
-    <GuestScore />
+    <HomeScore>3</HomeScore>
+    <GuestScore>3</GuestScore>
   </ttMatchesRow>  
    <ttMatchesRow>
     <Order>35</Order>
@@ -399,7 +399,7 @@
     <Location>Lens</Location>
     <Date>2016-06-25</Date>
     <Stage>RoundOf16</Stage>
-    <HomeTeam />
+    <HomeTeam>Croatia</HomeTeam>
     <GuestTeam />
     <HomeScore />
     <GuestScore />
@@ -442,7 +442,7 @@
     <Date>2016-06-27</Date>
     <Stage>RoundOf16</Stage>
     <HomeTeam>Italy</HomeTeam>
-    <GuestTeam />
+    <GuestTeam>Spain</GuestTeam>
     <HomeScore />
     <GuestScore />
   </ttMatchesRow>
