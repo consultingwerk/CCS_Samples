@@ -13,12 +13,8 @@
 
 /* ***************************  Definitions  ************************** */
 
-USING Consultingwerk.* FROM PROPATH.
-USING Consultingwerk.CcsSamples.Framework.BusinessLogic.* FROM PROPATH.
-USING Consultingwerk.CcsSamples.CustomService.* FROM PROPATH.
-USING Ccs.BusinessLogic.* FROM PROPATH.
-USING Consultingwerk.CcsSamples.StartupManager.* FROM PROPATH .
 USING Ccs.Common.*                               FROM PROPATH.
+USING Consultingwerk.CcsSamples.StartupManager.* FROM PROPATH .
 
 BLOCK-LEVEL ON ERROR UNDO, THROW.
 
