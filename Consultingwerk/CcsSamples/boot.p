@@ -13,10 +13,10 @@
 
 /* ***************************  Definitions  ************************** */
 
+BLOCK-LEVEL ON ERROR UNDO, THROW.
+
 USING Ccs.Common.*                               FROM PROPATH.
 USING Consultingwerk.CcsSamples.StartupManager.* FROM PROPATH .
-
-BLOCK-LEVEL ON ERROR UNDO, THROW.
 
 /* ***************************  Main Block  *************************** */
 
