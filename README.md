@@ -6,7 +6,7 @@ Sample implementations of the Commom Component Specification
 Consultingwerk/CcsSamples/BusinessEntity/Customer/get-customer-by-abstract-query.p
 
 
-* [boot.p) Framework bootstrap procedure, typically AppServer startup
+* [boot.p](Consultingwerk/CcsSamples/boot.p) Framework bootstrap procedure, typically AppServer startup
 * [invoke-custom-service.p](Consultingwerk/CcsSamples/CustomService/invoke-custom-service.p) Sample invoking custom service
 * [get-customer-by-abstract-query.p](Consultingwerk/CcsSamples/BusinessEntity/Customer/get-customer-by-abstract-query.p) Sample reading data using abstract query
 * [get-customer-by-querystring.p](Consultingwerk/CcsSamples/BusinessEntity/Customer/get-customer-by-querystring.p) Sample reading data using ABL query string
