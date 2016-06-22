@@ -1,0 +1,44 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<launchConfiguration type="abl.launchType">
+<booleanAttribute key="abl.abl.REREAD_NO_LOCK" value="true"/>
+<intAttribute key="abl.abl.STATEMENT_INPUT_CHARS" value="16000"/>
+<intAttribute key="abl.abl.STATEMENT_TOKENS" value="4000"/>
+<booleanAttribute key="abl.abl.USE_DEBUG_ALERT" value="true"/>
+<booleanAttribute key="abl.client.HIDE_TTY" value="false"/>
+<stringAttribute key="abl.client.PROVERSION" value="11.6"/>
+<booleanAttribute key="abl.client.USE_TTY" value="false"/>
+<booleanAttribute key="abl.databases.USE_PROJECT" value="true"/>
+<stringAttribute key="abl.debug.ABL_PROGRAM" value="Consultingwerk\CcsSamples\BusinessEntity\Customer\get-customer-by-abstract-query.p"/>
+<stringAttribute key="abl.debug.ATTR_ABL_PROJECT_NAME" value="CCS_Samples"/>
+<booleanAttribute key="abl.debug.GENERATE_LAUNCHER_PROGRAM" value="true"/>
+<booleanAttribute key="abl.debug.PROPATH_USE_DEFAULT" value="true"/>
+<stringAttribute key="abl.i18n.CASE_TABLE" value="Basic"/>
+<stringAttribute key="abl.i18n.COLLATION_TABLE" value="German-Library"/>
+<stringAttribute key="abl.i18n.DATE_FORMAT" value="dmy"/>
+<intAttribute key="abl.i18n.FRACTIONAL_SEP" value="44"/>
+<stringAttribute key="abl.i18n.INTERNAL_CODE_PAGE" value="ISO8859-1"/>
+<stringAttribute key="abl.i18n.STREAM_CODE_PAGE" value="ISO8859-1"/>
+<intAttribute key="abl.i18n.THOUSANDS_SEP" value="46"/>
+<intAttribute key="abl.performance.MAXIMUM_MEMORY" value="65534"/>
+<intAttribute key="abl.performance.STACK_SIZE" value="200"/>
+<stringAttribute key="abl.performance.TEMP_DIRECTORY" value="c:/Work/OpenEdge116_64"/>
+<booleanAttribute key="abl.performance.USE_DEFALTS" value="false"/>
+<booleanAttribute key="abl.profiling.ENABLE_LISTING" value="false"/>
+<booleanAttribute key="abl.profiling.ENABLE_PROFILING" value="false"/>
+<booleanAttribute key="abl.profiling.ENABLE_TRACING" value="false"/>
+<stringAttribute key="abl.profiling.PROFILER_DESCRIPTION" value=""/>
+<stringAttribute key="abl.profiling.PROFILER_DIRECTORY" value=""/>
+<stringAttribute key="abl.startup.USER_PARAMS" value="managers=Consultingwerk\CcsSamples\managers.xml,services=Consultingwerk\CcsSamples\services.xml"/>
+<booleanAttribute key="abl.startup.USE_PROJECT_AVM" value="false"/>
+<stringAttribute key="abl.startup.WORKING_DIRECTORY" value="C:\Work\Progress\CCS\CCS_Samples"/>
+<listAttribute key="org.eclipse.debug.core.MAPPED_RESOURCE_PATHS">
+<listEntry value="/CCS_Samples/Consultingwerk/CcsSamples/BusinessEntity/Customer/get-customer-by-abstract-query.p"/>
+</listAttribute>
+<listAttribute key="org.eclipse.debug.core.MAPPED_RESOURCE_TYPES">
+<listEntry value="1"/>
+</listAttribute>
+<booleanAttribute key="org.eclipse.debug.core.capture_output" value="false"/>
+<booleanAttribute key="org.eclipse.debug.ui.ATTR_CONSOLE_OUTPUT_ON" value="false"/>
+<booleanAttribute key="org.eclipse.debug.ui.ATTR_LAUNCH_IN_BACKGROUND" value="false"/>
+<booleanAttribute key="org.eclipse.debug.ui.private" value="false"/>
+</launchConfiguration>
