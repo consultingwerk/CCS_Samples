@@ -102,8 +102,9 @@ CLASS Consultingwerk.CcsSamples.StartupManager.StartupManager
 
     /**
      * Purpose: Initializes the managers from ttManagers
-     * Notes:
-     *
+     * Notes:   The initialization sequence defined in ttManagers should
+     *          be in such a away, that managers cross dependencies are
+     *          best met. This is up to the person doing the configuration
      */
     METHOD PROTECTED VOID InitializeManagers():
 
