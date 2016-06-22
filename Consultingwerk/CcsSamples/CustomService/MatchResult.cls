@@ -36,7 +36,7 @@ CLASS Consultingwerk.CcsSamples.CustomService.MatchResult:
      * Purpose: Returns the score of the guest team
      * Notes:
      */
-    DEFINE PUBLIC PROPERTY GuestScore AS INTEGER NO-UNDO
+    DEFINE PUBLIC PROPERTY GuestScore AS INTEGER NO-UNDO INIT ?
     GET.
     PRIVATE SET.
 
@@ -44,7 +44,7 @@ CLASS Consultingwerk.CcsSamples.CustomService.MatchResult:
      * Purpose: Returns the home team
      * Notes:
      */
-    DEFINE PUBLIC PROPERTY GuestTeam AS TeamEnum NO-UNDO
+    DEFINE PUBLIC PROPERTY GuestTeam AS TeamEnum NO-UNDO INIT ?
     GET.
     PRIVATE SET.
 
