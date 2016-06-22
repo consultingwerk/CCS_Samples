@@ -98,10 +98,11 @@ CLASS Consultingwerk.CcsSamples.CustomService.MatchResult:
 
         DEFINE VARIABLE cReturn AS CHARACTER NO-UNDO.
 
-        ASSIGN cReturn = SUBSTITUTE ("Game &1, Date: &2, Location: &3",
+        ASSIGN cReturn = SUBSTITUTE ("Game &1, Date: &2, Location: &3, Stage: &4",
                                      THIS-OBJECT:Order,
                                      THIS-OBJECT:Date,
-                                     THIS-OBJECT:Location) .
+                                     THIS-OBJECT:Location,
+                                     THIS-OBJECT:Stage:ToString()) .
 
         IF VALID-OBJECT (THIS-OBJECT:HomeTeam) OR
            VALID-OBJECT (THIS-OBJECT:GuestTeam) THEN DO:
