@@ -1,10 +1,14 @@
 # CCS Samples
 Sample implementations of the Commom Component Specification
 
+## Spec status
+
+* Startup Manager: In community review
+* Service Manager: Draft, interfaces used in code are based on a best guess
+* Session Manager: Draft, interfaces used in code are based on a best guess
+* Business Entity: In community review
+
 ## Sample procedures
-
-Consultingwerk/CcsSamples/BusinessEntity/Customer/get-customer-by-abstract-query.p
-
 
 * [boot.p](Consultingwerk/CcsSamples/boot.p) Framework bootstrap procedure, typically AppServer startup
 * [invoke-custom-service.p](Consultingwerk/CcsSamples/CustomService/invoke-custom-service.p) Sample invoking custom service
