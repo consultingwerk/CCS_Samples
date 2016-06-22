@@ -75,3 +75,18 @@ FOR EACH eCustomer:
             eCustomer.Name
             eCustomer.SalesRep WITH DOWN .
 END.
+
+// Error handling
+CATCH apperr AS Progress.Lang.AppError :
+    MESSAGE apperr:GetMessage(1) SKIP
+            apperr:ReturnValue         SKIP (2)
+            apperr:CallStack
+        VIEW-AS ALERT-BOX.
+END CATCH.
+
+CATCH err AS Progress.Lang.Error :
+    MESSAGE err:GetMessage(1)       SKIP (2)
+            err:CallStack
+
+        VIEW-AS ALERT-BOX.
+END CATCH.

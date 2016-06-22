@@ -13,6 +13,10 @@
 
 /* ***************************  Definitions  ************************** */
 
+USING Consultingwerk.* FROM PROPATH.
+USING Consultingwerk.CcsSamples.Framework.BusinessLogic.* FROM PROPATH.
+USING Consultingwerk.CcsSamples.CustomService.* FROM PROPATH.
+USING Ccs.BusinessLogic.* FROM PROPATH.
 USING Consultingwerk.CcsSamples.StartupManager.* FROM PROPATH .
 USING Ccs.Common.*                               FROM PROPATH.
 
@@ -23,17 +27,3 @@ BLOCK-LEVEL ON ERROR UNDO, THROW.
 Application:StartupManager = NEW StartupManager() .
 Application:StartupManager:initialize() .
 
-MESSAGE Application:ServiceManager
-    VIEW-AS ALERT-BOX.
-
-CATCH apperr AS Progress.Lang.AppError :
-    MESSAGE apperr:GetMessage(1) SKIP
-            apperr:ReturnValue
-        VIEW-AS ALERT-BOX.
-END CATCH.
-
-CATCH err AS Progress.Lang.Error :
-    MESSAGE err:GetMessage(1) SKIP
-
-        VIEW-AS ALERT-BOX.
-END CATCH.

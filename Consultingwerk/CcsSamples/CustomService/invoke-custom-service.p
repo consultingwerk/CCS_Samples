@@ -31,10 +31,37 @@ oMatchesService = CAST (Application:ServiceManager:getService(GET-CLASS (IEuro20
 
 oResults = oMatchesService:GetTodaysMatchResults().
 
-MESSAGE "today" EXTENT (oResults)
+MESSAGE "today:" EXTENT (oResults)
     VIEW-AS ALERT-BOX.
 
 DO i = 1 TO EXTENT (oResults):
     MESSAGE oResults[i]:ToString()
         VIEW-AS ALERT-BOX.
 END.
+
+EXTENT (oResults) = ? .
+
+oResults = oMatchesService:GetMatchResultsByDate(7/10/2016).
+
+MESSAGE "final:" EXTENT (oResults)
+    VIEW-AS ALERT-BOX.
+
+DO i = 1 TO EXTENT (oResults):
+    MESSAGE oResults[i]:ToString()
+        VIEW-AS ALERT-BOX.
+END.
+
+// Error handling
+CATCH apperr AS Progress.Lang.AppError :
+    MESSAGE apperr:GetMessage(1) SKIP
+            apperr:ReturnValue         SKIP (2)
+            apperr:CallStack
+        VIEW-AS ALERT-BOX.
+END CATCH.
+
+CATCH err AS Progress.Lang.Error :
+    MESSAGE err:GetMessage(1)       SKIP (2)
+            err:CallStack
+
+        VIEW-AS ALERT-BOX.
+END CATCH.
