@@ -39,8 +39,9 @@ MESSAGE STRING (oMatches) SKIP
     VIEW-AS ALERT-BOX.
 
 // And now the matches of the world champion
-//                                                   qryname paramname paramvalue
-oMatches:getData(NEW GetDataRequest (NEW NamedQuery ("team", "team", NEW CharacterHolder ("Germany"))),
+oMatches:getData(NEW GetDataRequest (NEW NamedQuery ("team",                            // name of named query
+                                                     "team",                            // first parameter name
+                                                     NEW CharacterHolder ("Germany"))), // first parameter value
                  OUTPUT DATASET dsMatches BY-REFERENCE) .
 
 FOR EACH eMatches:
