@@ -390,7 +390,7 @@
 		<Date>2016-06-25</Date>
 		<Stage>RoundOf16</Stage>
 		<HomeTeam>Wales</HomeTeam>
-		<GuestTeam />
+		<GuestTeam>NorthernIreland</GuestTeam>
 		<HomeScore />
 		<GuestScore />
 	</ttMatchesRow>
@@ -400,7 +400,7 @@
 		<Date>2016-06-25</Date>
 		<Stage>RoundOf16</Stage>
 		<HomeTeam>Croatia</HomeTeam>
-		<GuestTeam />
+		<GuestTeam>Portugal</GuestTeam>
 		<HomeScore />
 		<GuestScore />
 	</ttMatchesRow>
@@ -411,7 +411,7 @@
 		<Date>2016-06-26</Date>
 		<Stage>RoundOf16</Stage>
 		<HomeTeam>France</HomeTeam>
-		<GuestTeam />
+		<GuestTeam>RepublicOfIreland</GuestTeam>
 		<HomeScore />
 		<GuestScore />
 	</ttMatchesRow>
@@ -421,7 +421,7 @@
 		<Date>2016-06-26</Date>
 		<Stage>RoundOf16</Stage>
 		<HomeTeam>Germany</HomeTeam>
-		<GuestTeam />
+		<GuestTeam>Slovakia</GuestTeam>
 		<HomeScore />
 		<GuestScore />
 	</ttMatchesRow>
@@ -430,8 +430,8 @@
 		<Location>Toulouse</Location>
 		<Date>2016-06-26</Date>
 		<Stage>RoundOf16</Stage>
-		<HomeTeam />
-		<GuestTeam />
+		<HomeTeam>Hungary</HomeTeam>
+		<GuestTeam>Belgium</GuestTeam>
 		<HomeScore />
 		<GuestScore />
 	</ttMatchesRow>
@@ -452,7 +452,7 @@
 		<Date>2016-06-27</Date>
 		<Stage>RoundOf16</Stage>
 		<HomeTeam>England</HomeTeam>
-		<GuestTeam />
+		<GuestTeam>Iceland
 		<HomeScore />
 		<GuestScore />
 	</ttMatchesRow>
