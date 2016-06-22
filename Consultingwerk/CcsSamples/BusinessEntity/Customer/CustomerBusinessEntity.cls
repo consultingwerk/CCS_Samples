@@ -23,6 +23,7 @@
 BLOCK-LEVEL ON ERROR UNDO, THROW.
 
 USING Consultingwerk.*                                    FROM PROPATH.
+USING Consultingwerk.CcsSamples.BusinessEntity.*          FROM PROPATH.
 USING Consultingwerk.CcsSamples.BusinessEntity.Customer.* FROM PROPATH .
 USING Consultingwerk.CcsSamples.Framework.BusinessLogic.* FROM PROPATH .
 USING Ccs.BusinessLogic.*                                 FROM PROPATH  .
@@ -56,6 +57,7 @@ CLASS Consultingwerk.CcsSamples.BusinessEntity.Customer.CustomerBusinessEntity
     METHOD PROTECTED VOID OpenQuery (poRequest AS Ccs.BusinessLogic.IGetDataRequest):
 
         DEFINE VARIABLE oGetDataTableRequest AS IGetDataTableRequest NO-UNDO .
+        DEFINE VARIABLE oQueryBuilder        AS QueryBuilder         NO-UNDO .
 
         IF NOT VALID-OBJECT (poRequest) THEN DO:
             QUERY qCustomer:QUERY-PREPARE ("FOR EACH Customer") .
@@ -79,12 +81,12 @@ CLASS Consultingwerk.CcsSamples.BusinessEntity.Customer.CustomerBusinessEntity
 
                 IF VALID-OBJECT (oGetDataTableRequest:QueryDefinition) THEN DO:
 
+                    oQueryBuilder = NEW QueryBuilder () .
 
+                    QUERY qCustomer:QUERY-PREPARE (oQueryBuilder:BuildQueryString ("Customer",
+                                                                                   oGetDataTableRequest:QueryDefinition)) .
 
-
-
-
-
+                    RETURN .
                 END.
             END.
         END.
@@ -100,8 +102,8 @@ CLASS Consultingwerk.CcsSamples.BusinessEntity.Customer.CustomerBusinessEntity
      */
     METHOD PROTECTED VOID OpenNamedQuery (poNamedQuery AS INamedQuery):
 
-        DEFINE VARIABLE oDateHolder      AS DateHolder      NO-UNDO .
-        DEFINE VARIABLE oCharacterHolder AS CharacterHolder NO-UNDO .
+        // DEFINE VARIABLE oDateHolder      AS DateHolder      NO-UNDO .
+        // DEFINE VARIABLE oCharacterHolder AS CharacterHolder NO-UNDO .
 
         CASE poNamedQuery:Name:
 

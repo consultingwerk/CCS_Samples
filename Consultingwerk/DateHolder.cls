@@ -28,7 +28,7 @@ USING Ccs.Common.Support.* FROM PROPATH .
 USING Progress.Lang.*      FROM PROPATH .
 
 CLASS Consultingwerk.DateHolder
-    IMPLEMENTS IPrimitiveHolder
+    IMPLEMENTS IPrimitiveHolder, IDateHolder
     SERIALIZABLE:
 
     /*------------------------------------------------------------------------------

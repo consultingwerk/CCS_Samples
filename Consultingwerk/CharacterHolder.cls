@@ -28,7 +28,7 @@ USING Ccs.Common.Support.* FROM PROPATH .
 USING Progress.Lang.*      FROM PROPATH .
 
 CLASS Consultingwerk.CharacterHolder
-    IMPLEMENTS IPrimitiveHolder
+    IMPLEMENTS IPrimitiveHolder, ICharacterHolder
     SERIALIZABLE:
 
     /*------------------------------------------------------------------------------
