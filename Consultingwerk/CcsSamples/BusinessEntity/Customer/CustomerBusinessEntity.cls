@@ -22,6 +22,7 @@
 
 BLOCK-LEVEL ON ERROR UNDO, THROW.
 
+USING Consultingwerk.Util.* FROM PROPATH.
 USING Consultingwerk.*                                    FROM PROPATH.
 USING Consultingwerk.CcsSamples.BusinessEntity.*          FROM PROPATH.
 USING Consultingwerk.CcsSamples.BusinessEntity.Customer.* FROM PROPATH .
@@ -30,7 +31,7 @@ USING Ccs.BusinessLogic.*                                 FROM PROPATH  .
 USING Progress.Lang.*                                     FROM PROPATH .
 
 CLASS Consultingwerk.CcsSamples.BusinessEntity.Customer.CustomerBusinessEntity
-    IMPLEMENTS IBusinessEntity:
+    IMPLEMENTS IUpdatableBusinessEntity:
 
     {Consultingwerk/CcsSamples/BusinessEntity/Customer/dsCustomer.i}
 
@@ -195,6 +196,91 @@ CLASS Consultingwerk.CcsSamples.BusinessEntity.Customer.CustomerBusinessEntity
     METHOD PUBLIC VOID initialize ():
 
         /* noop */
+
+    END METHOD.
+
+    /**
+     * Purpose: Stores data modifications in the persistent storage (typically a
+     *          database)
+     * Notes:   The output dataset will contain validation error messages in the
+     *          ERROR-STRING attributes of the record buffers. Records with Errors
+     *          will also have the ERROR attribute set to TRUE. When at least a single
+     *          record has a validation error, the ERROR attribute of the ProDataset
+     *          is assigned to TRUE as well
+     * @param phDataset INPUT-OUTPUT Dataset containing modified records to be processed (should be passed BY-REFERENCE)
+     * @param poUpdateDataRequest The optional request object that allows to provide custom instructions to the method
+     * @return An optional response object returned by the method
+     */
+    METHOD PUBLIC Progress.Lang.Object updateData (INPUT-OUTPUT DATASET-HANDLE phDataset,
+                                                   poUpdateDataRequest AS IUpdateDataRequest):
+
+        IF NOT VALID-HANDLE (phDataset) THEN
+            ASSIGN phDataset = DATASET dsCustomer:HANDLE .
+
+        RETURN THIS-OBJECT:updateData (INPUT-OUTPUT DATASET-HANDLE phDataset BY-REFERENCE, poUpdateDataRequest) .
+
+    END METHOD.
+
+    /**
+     * Purpose: Stores data modifications in the persistent storage (typically a
+     *          database)
+     * Notes:   The output dataset will contain validation error messages in the
+     *          ERROR-STRING attributes of the record buffers. Records with Errors
+     *          will also have the ERROR attribute set to TRUE. When at least a single
+     *          record has a validation error, the ERROR attribute of the ProDataset
+     *          is assigned to TRUE as well
+     * @param phDataset INPUT-OUTPUT Dataset containing modified records to be processed (should be passed BY-REFERENCE)
+     * @param poUpdateDataRequest The optional request object that allows to provide custom instructions to the method
+     * @return An optional response object returned by the method
+     */
+    METHOD PUBLIC Progress.Lang.Object updateData (INPUT-OUTPUT DATASET dsCustomer,
+                                                   poUpdateDataRequest AS IUpdateDataRequest):
+
+        THIS-OBJECT:ValidateData () .
+
+        IF DATASET dsCustomer:ERROR = TRUE THEN
+            RETURN ? .
+
+        BUFFER eCustomer:ATTACH-DATA-SOURCE (DATA-SOURCE srcCustomer:HANDLE) .
+
+        FOR EACH eCustomerBefore:
+            BUFFER eCustomerBefore:SAVE-ROW-CHANGES (1, "CustNum") .
+        END.
+
+        FINALLY:
+            IF VALID-HANDLE (BUFFER eCustomer:DATA-SOURCE) THEN
+                BUFFER eCustomer:DETACH-DATA-SOURCE () .
+        END FINALLY.
+
+    END METHOD .
+
+    /**
+     * Purpose:
+     * Notes:
+     *
+     */
+    METHOD PROTECTED VOID ValidateData ():
+
+        FOR EACH eCustomerBefore WHERE ROW-STATE (eCustomerBefore) = ROW-DELETED:
+
+            DatasetHelper:AddErrorString(BUFFER eCustomerBefore:HANDLE, "You can't delete customers.").
+
+        END .
+
+        FOR EACH eCustomer WHERE ROW-STATE (eCustomer) = ROW-CREATED OR ROW-STATE (eCustomer) = ROW-MODIFIED:
+
+            FIND eCustomerBefore WHERE ROWID (eCustomerBefore) = BUFFER eCustomer:BEFORE-ROWID .
+
+            IF ROW-STATE (eCustomer) = ROW-MODIFIED THEN DO:
+
+                IF eCustomer.CustNum <> eCustomerBefore.CustNum THEN
+                    DatasetHelper:AddErrorString(BUFFER eCustomer:HANDLE, "You cannot modify cust num.", "CustNum") .
+            END.
+
+            IF eCustomer.Name = ? OR eCustomer.Name = "" THEN
+                DatasetHelper:AddErrorString(BUFFER eCustomer:HANDLE, "Name may not be empty.", "Name") .
+
+        END.
 
     END METHOD.
 
