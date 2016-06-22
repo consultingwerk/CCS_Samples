@@ -8,6 +8,14 @@ Sample implementations of the Commom Component Specification
 * Session Manager: Draft, interfaces used in code are based on a best guess
 * Business Entity: In community review
 
+## Dependencies
+
+These samples are dependent on the CCSSSS (Startup-, Service- and Session-Manager spec) and the CCSBE Business Entity spec.. The interfaces can be downloaded here:
+
+* [Startup-, Service- and Session-Manager](CCSSSS01.zip)
+* [Business Enttiy](CCSBE01.zip)
+ 
+
 ## Sample procedures
 
 * [boot.p](Consultingwerk/CcsSamples/boot.p) Framework bootstrap procedure, typically AppServer startup
