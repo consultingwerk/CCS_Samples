@@ -25,7 +25,7 @@
                   would be performed
   ----------------------------------------------------------------------*/
 
-ROUTINE-LEVEL ON ERROR UNDO, THROW.
+BLOCK-LEVEL ON ERROR UNDO, THROW.
 
 USING Ccs.BusinessLogic.*                        FROM PROPATH.
 USING Ccs.Common.Support.*                       FROM PROPATH .
