@@ -10,6 +10,7 @@
     Notes       :
   ----------------------------------------------------------------------*/
 
+USING Consultingwerk.CcsSamples.Framework.BusinessLogic.* FROM PROPATH.
 USING Ccs.BusinessLogic.* FROM PROPATH .
 USING Progress.Lang.*     FROM PROPATH .
 
@@ -27,6 +28,7 @@ CLASS Consultingwerk.CcsSamples.Framework.BusinessLogic.GetDataTableRequest
     ------------------------------------------------------------------------------*/
     DEFINE PUBLIC PROPERTY BatchingContext AS CHARACTER NO-UNDO
     GET.
+    SET.
 
     /*------------------------------------------------------------------------------
         Purpose: Returns the number of records requested by the caller or the
@@ -38,6 +40,7 @@ CLASS Consultingwerk.CcsSamples.Framework.BusinessLogic.GetDataTableRequest
     ------------------------------------------------------------------------------*/
     DEFINE PUBLIC PROPERTY NumRecords AS INT64 NO-UNDO
     GET.
+    SET.
 
     /*------------------------------------------------------------------------------
         Purpose: Returns the abstract query defintion for this request
@@ -45,6 +48,7 @@ CLASS Consultingwerk.CcsSamples.Framework.BusinessLogic.GetDataTableRequest
     ------------------------------------------------------------------------------*/
     DEFINE PUBLIC PROPERTY QueryDefinition AS IQueryDefinition NO-UNDO
     GET.
+    SET.
 
     /*------------------------------------------------------------------------------
         Purpose: Returns the Query String for this table
@@ -64,6 +68,7 @@ CLASS Consultingwerk.CcsSamples.Framework.BusinessLogic.GetDataTableRequest
     ------------------------------------------------------------------------------*/
     DEFINE PUBLIC PROPERTY QueryString AS CHARACTER NO-UNDO
     GET.
+    SET.
 
     /*------------------------------------------------------------------------------
         Purpose: Returns the number of records to skip
@@ -72,6 +77,7 @@ CLASS Consultingwerk.CcsSamples.Framework.BusinessLogic.GetDataTableRequest
     ------------------------------------------------------------------------------*/
     DEFINE PUBLIC PROPERTY Skip AS INT64 NO-UNDO
     GET.
+    SET.
 
     /*------------------------------------------------------------------------------
         Purpose: Returns the name of the ProDataset Table
@@ -79,6 +85,7 @@ CLASS Consultingwerk.CcsSamples.Framework.BusinessLogic.GetDataTableRequest
     ------------------------------------------------------------------------------*/
     DEFINE PUBLIC PROPERTY TableName AS CHARACTER NO-UNDO
     GET.
+    SET.
 
     /**
      * Purpose:
@@ -95,6 +102,10 @@ CLASS Consultingwerk.CcsSamples.Framework.BusinessLogic.GetDataTableRequest
      */
     CONSTRUCTOR PUBLIC GetDataTableRequest (pcTableName AS CHARACTER,
                                             pcQueryString AS CHARACTER):
+
+         ASSIGN THIS-OBJECT:TableName   = pcTableName
+                THIS-OBJECT:QueryString = pcQueryString .
+
     END CONSTRUCTOR.
 
     /**
@@ -104,6 +115,27 @@ CLASS Consultingwerk.CcsSamples.Framework.BusinessLogic.GetDataTableRequest
      */
     CONSTRUCTOR PUBLIC GetDataTableRequest (pcTableName AS CHARACTER,
                                             poQueryEntries AS IQueryEntry EXTENT):
+
+         DEFINE VARIABLE oSort AS IQuerySortEntry EXTENT .
+
+         ASSIGN THIS-OBJECT:TableName       = pcTableName
+                THIS-OBJECT:QueryDefinition = NEW QueryDefinition (NEW QueryGroup(poQueryEntries), oSort) .
+
+    END CONSTRUCTOR.
+
+    /**
+     * Purpose:
+     * Notes:
+     *
+     */
+    CONSTRUCTOR PUBLIC GetDataTableRequest (pcTableName AS CHARACTER,
+                                            poQueryEntry AS IQueryEntry):
+
+         DEFINE VARIABLE oSort AS IQuerySortEntry EXTENT .
+
+         ASSIGN THIS-OBJECT:TableName       = pcTableName
+                THIS-OBJECT:QueryDefinition = NEW QueryDefinition (poQueryEntry, oSort) .
+
     END CONSTRUCTOR.
 
 END CLASS.

@@ -9,8 +9,9 @@
     Notes       :
   ----------------------------------------------------------------------*/
 
-USING Ccs.BusinessLogic.* FROM PROPATH .
-USING Progress.Lang.*     FROM PROPATH .
+USING Ccs.BusinessLogic.*                                 FROM PROPATH .
+USING Consultingwerk.CcsSamples.Framework.BusinessLogic.* FROM PROPATH.
+USING Progress.Lang.*                                     FROM PROPATH .
 
 CLASS Consultingwerk.CcsSamples.Framework.BusinessLogic.GetDataRequest
     IMPLEMENTS IGetDataRequest:
@@ -102,10 +103,87 @@ CLASS Consultingwerk.CcsSamples.Framework.BusinessLogic.GetDataRequest
      * Notes:
      *
      */
+    CONSTRUCTOR PUBLIC GetDataRequest (pcTableName1 AS CHARACTER,
+                                       pcQueryString1 AS CHARACTER):
+
+        ASSIGN EXTENT (THIS-OBJECT:TableRequests) = 1
+
+               THIS-OBJECT:TableRequests[1] = NEW GetDataTableRequest(pcTableName1, pcQueryString1) .
+
+    END CONSTRUCTOR.
+
+    /**
+     * Purpose:
+     * Notes:
+     *
+     */
+    CONSTRUCTOR PUBLIC GetDataRequest (pcTableName1 AS CHARACTER,
+                                       pcQueryString1 AS CHARACTER,
+                                       pcTableName2 AS CHARACTER,
+                                       pcQueryString2 AS CHARACTER):
+
+        ASSIGN EXTENT (THIS-OBJECT:TableRequests) = 2
+
+               THIS-OBJECT:TableRequests[1] = NEW GetDataTableRequest(pcTableName1, pcQueryString1)
+               THIS-OBJECT:TableRequests[2] = NEW GetDataTableRequest(pcTableName2, pcQueryString2)
+               .
+
+    END CONSTRUCTOR.
+
+    /**
+     * Purpose:
+     * Notes:
+     *
+     */
+    CONSTRUCTOR PUBLIC GetDataRequest (pcTableName1 AS CHARACTER,
+                                       pcQueryString1 AS CHARACTER,
+                                       pcTableName2 AS CHARACTER,
+                                       pcQueryString2 AS CHARACTER,
+                                       pcTableName3 AS CHARACTER,
+                                       pcQueryString3 AS CHARACTER):
+
+        ASSIGN EXTENT (THIS-OBJECT:TableRequests) = 3
+
+               THIS-OBJECT:TableRequests[1] = NEW GetDataTableRequest(pcTableName1, pcQueryString1)
+               THIS-OBJECT:TableRequests[2] = NEW GetDataTableRequest(pcTableName2, pcQueryString2)
+               THIS-OBJECT:TableRequests[3] = NEW GetDataTableRequest(pcTableName3, pcQueryString3)
+               .
+
+    END CONSTRUCTOR.
+
+
+    /**
+     * Purpose:
+     * Notes:
+     *
+     */
     CONSTRUCTOR PUBLIC GetDataRequest (poNamedQuery AS INamedQuery):
 
         ASSIGN THIS-OBJECT:NamedQuery = poNamedQuery .
 
     END CONSTRUCTOR.
+
+    /*------------------------------------------------------------------------------
+        Purpose: Returns the IGetDataTableRequest by name
+        Notes:
+        @param poGetDataRequest The IGetDataRequest for the given temp-table
+        @param pcTableName The name of the temp-table to return the request for
+        @return The IGetDataTableRequest for the temp-table
+    ------------------------------------------------------------------------------*/
+    METHOD PUBLIC STATIC IGetDataTableRequest GetDataTableRequestByName (poGetDataRequest AS IGetDataRequest,
+                                                                         pcTempTableName AS CHARACTER):
+
+        DEFINE VARIABLE i AS INTEGER NO-UNDO.
+
+        DO i = 1 TO EXTENT (poGetDataRequest:TableRequests):
+
+            IF poGetDataRequest:TableRequests[i]:TableName = pcTempTableName THEN
+                RETURN poGetDataRequest:TableRequests[i] .
+
+        END.
+
+        RETURN ? .
+
+    END METHOD.
 
 END CLASS.
