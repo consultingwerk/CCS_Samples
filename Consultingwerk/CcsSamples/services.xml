@@ -16,6 +16,6 @@
     <InstanceName />
     <ServiceImplementation>Consultingwerk.CcsSamples.CustomService.Euro2016ResultService</ServiceImplementation>
   </ttServicesRow>
-  
-  
 </ttServices>
+
+
