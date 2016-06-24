@@ -23,6 +23,7 @@ These samples are dependent on the CCSSSS (Startup-, Service- and Session-Manage
 * [get-customer-by-abstract-query.p](Consultingwerk/CcsSamples/BusinessEntity/Customer/get-customer-by-abstract-query.p) Sample reading data using abstract query
 * [get-customer-by-querystring.p](Consultingwerk/CcsSamples/BusinessEntity/Customer/get-customer-by-querystring.p) Sample reading data using ABL query string
 * [get-matches-by-named-query.p](Consultingwerk/CcsSamples/BusinessEntity/Euro2016/get-matches-by-named-query.p) Sample reading data using named query
+* [update-customer.p] (Consultingwerk/CcsSamples/BusinessEntity/Customer/update-customer.p) Sample updating Customer records using the Business Entity
 
 ## Custom services sample
 
