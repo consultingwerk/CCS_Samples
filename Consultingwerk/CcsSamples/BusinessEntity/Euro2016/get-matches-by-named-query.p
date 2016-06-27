@@ -51,6 +51,9 @@ MESSAGE STRING (oMatches) SKIP
     VIEW-AS ALERT-BOX.
 
 // And now the matches of the world champion
+MESSAGE "And now the matches of the world champion"
+    VIEW-AS ALERT-BOX.
+
 oMatches:getData(NEW GetDataRequest (NEW NamedQuery ("team",                            // name of named query
                                                      "team",                            // first parameter name
                                                      NEW CharacterHolder ("Germany"))), // first parameter value
