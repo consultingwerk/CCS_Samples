@@ -1,3 +1,14 @@
+/**********************************************************************
+ * Copyright (C) 2006-2016 by Consultingwerk Ltd. ("CW") -            *
+ * www.consultingwerk.de and other contributors as listed             *
+ * below.  All Rights Reserved.                                       *
+ *                                                                    *
+ *  Software is distributed on an "AS IS", WITHOUT WARRANTY OF ANY    *
+ *   KIND, either express or implied.                                 *
+ *                                                                    *
+ *  Contributors:                                                     *
+ *                                                                    *
+ **********************************************************************/
 /*------------------------------------------------------------------------
     File        : invoke-custom-service.p
     Purpose     :
@@ -26,7 +37,8 @@ DEFINE VARIABLE oResults        AS MatchResult EXTENT .
 
 RUN Consultingwerk/CcsSamples/boot.p .
 
-oMatchesService = CAST (Application:ServiceManager:getService(GET-CLASS (IEuro2016ResultService)), IEuro2016ResultService) .
+oMatchesService = CAST (Application:ServiceManager:getService(GET-CLASS (IEuro2016ResultService)),
+                        IEuro2016ResultService) .
 
 oResults = oMatchesService:GetTodaysMatchResults().
 
@@ -44,7 +56,7 @@ EXTENT (oResults) = ? .
 
 oResults = oMatchesService:GetMatchResultsByDate(7/10/2016).
 
-MESSAGE "final:" EXTENT (oResults)
+MESSAGE "final (7/10/2016):" EXTENT (oResults)
     VIEW-AS ALERT-BOX.
 
 DO i = 1 TO EXTENT (oResults):

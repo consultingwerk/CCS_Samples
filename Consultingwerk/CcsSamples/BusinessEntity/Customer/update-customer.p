@@ -1,5 +1,5 @@
 /**********************************************************************
- * Copyright (C) 2006-2012 by Consultingwerk Ltd. ("CW") -            *
+ * Copyright (C) 2006-2016 by Consultingwerk Ltd. ("CW") -            *
  * www.consultingwerk.de and other contributors as listed             *
  * below.  All Rights Reserved.                                       *
  *                                                                    *
@@ -45,7 +45,7 @@ oCustomerEntity = CAST (Application:ServiceManager:getService(GET-CLASS (IBusine
                                                               BusinessEntities:Customer:ToString()),
                         IUpdatableBusinessEntity) .
 
-
+// Need to FIND FIRST customer to update customer
 oCustomerEntity:getData (NEW GetDataRequest("eCustomer", "CustNum = 1"),
                          OUTPUT DATASET dsCustomer) .
 
@@ -53,16 +53,19 @@ TEMP-TABLE eCustomer:TRACKING-CHANGES = TRUE .
 
 FIND FIRST eCustomer .
 
+// Update data
 UPDATE eCustomer.CustNum
        eCustomer.Name
        eCustomer.SalesRep WITH 1 COL 1 DOWN .
 
 RELEASE eCustomer .
 
+// Collect changes
 CREATE DATASET hChanges.
 hChanges:CREATE-LIKE (DATASET dsCustomer:HANDLE) .
 hChanges:GET-CHANGES (DATASET dsCustomer:HANDLE) .
 
+// Call into the Customer Business Entity
 oCustomerEntity:updateData(INPUT-OUTPUT DATASET-HANDLE hChanges BY-REFERENCE, ?) .
 
 hChanges:GET-BUFFER-HANDLE (1):FIND-FIRST () .

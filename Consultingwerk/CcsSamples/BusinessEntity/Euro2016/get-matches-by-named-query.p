@@ -1,3 +1,14 @@
+/**********************************************************************
+ * Copyright (C) 2006-2016 by Consultingwerk Ltd. ("CW") -            *
+ * www.consultingwerk.de and other contributors as listed             *
+ * below.  All Rights Reserved.                                       *
+ *                                                                    *
+ *  Software is distributed on an "AS IS", WITHOUT WARRANTY OF ANY    *
+ *   KIND, either express or implied.                                 *
+ *                                                                    *
+ *  Contributors:                                                     *
+ *                                                                    *
+ **********************************************************************/
 /*------------------------------------------------------------------------
     File        : get-matches-by-named-query.p
     Purpose     :
@@ -30,7 +41,8 @@ DEFINE VARIABLE oCount   AS IGetResultCountResponse NO-UNDO .
 
 RUN Consultingwerk/CcsSamples/boot.p .
 
-oMatches = CAST (Application:ServiceManager:getService(GET-CLASS (IBusinessEntity), "Matches"), IBusinessEntity) .
+oMatches = CAST (Application:ServiceManager:getService(GET-CLASS (IBusinessEntity), "Matches"),
+                 IBusinessEntity) .
 
 oCount = oMatches:getResultCount (NEW GetDataRequest (NEW NamedQuery("today":U))) .
 
