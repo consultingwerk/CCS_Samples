@@ -462,8 +462,8 @@
 		<Location>Marseille</Location>
 		<Date>2016-06-30</Date>
 		<Stage>QuarterFinal</Stage>
-		<HomeTeam />
-		<GuestTeam />
+		<HomeTeam>Poland</HomeTeam>
+		<GuestTeam>Portugal</GuestTeam>
 		<HomeScore />
 		<GuestScore />
 	</ttMatchesRow>
@@ -472,8 +472,8 @@
 		<Location>Lille</Location>
 		<Date>2016-07-01</Date>
 		<Stage>QuarterFinal</Stage>
-		<HomeTeam />
-		<GuestTeam />
+		<HomeTeam>Wales</HomeTeam>
+		<GuestTeam>Belgium</GuestTeam>
 		<HomeScore />
 		<GuestScore />
 	</ttMatchesRow>
@@ -482,7 +482,7 @@
 		<Location>Bordeaux</Location>
 		<Date>2016-07-02</Date>
 		<Stage>QuarterFinal</Stage>
-		<HomeTeam />
+		<HomeTeam>Germany</HomeTeam>
 		<GuestTeam />
 		<HomeScore />
 		<GuestScore />
@@ -492,7 +492,7 @@
 		<Location>SaintDenis</Location>
 		<Date>2016-07-03</Date>
 		<Stage>QuarterFinal</Stage>
-		<HomeTeam />
+		<HomeTeam>France</HomeTeam>
 		<GuestTeam />
 		<HomeScore />
 		<GuestScore />
