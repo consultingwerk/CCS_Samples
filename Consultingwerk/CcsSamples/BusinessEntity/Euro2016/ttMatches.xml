@@ -360,8 +360,8 @@
 		<Stage>Group</Stage>
 		<HomeTeam>Italy</HomeTeam>
 		<GuestTeam>RepublicOfIreland</GuestTeam>
-		<HomeScore />
-		<GuestScore />
+		<HomeScore>0</HomeScore>
+		<GuestScore>1</GuestScore>
 	</ttMatchesRow>
 	<ttMatchesRow>
 		<Order>36</Order>
@@ -370,8 +370,8 @@
 		<Stage>Group</Stage>
 		<HomeTeam>Sweden</HomeTeam>
 		<GuestTeam>Belgium</GuestTeam>
-		<HomeScore />
-		<GuestScore />
+		<HomeScore>0</HomeScore>
+		<GuestScore>1</GuestScore>
 	</ttMatchesRow>
 
 	<ttMatchesRow>
@@ -381,8 +381,8 @@
 		<Stage>RoundOf16</Stage>
 		<HomeTeam>Switzerland</HomeTeam>
 		<GuestTeam>Poland</GuestTeam>
-		<HomeScore />
-		<GuestScore />
+		<HomeScore>5</HomeScore>
+		<GuestScore>6</GuestScore>
 	</ttMatchesRow>
 	<ttMatchesRow>
 		<Order>38</Order>
@@ -391,8 +391,8 @@
 		<Stage>RoundOf16</Stage>
 		<HomeTeam>Wales</HomeTeam>
 		<GuestTeam>NorthernIreland</GuestTeam>
-		<HomeScore />
-		<GuestScore />
+		<HomeScore>1</HomeScore>
+		<GuestScore>0</GuestScore>
 	</ttMatchesRow>
 	<ttMatchesRow>
 		<Order>39</Order>
@@ -401,8 +401,8 @@
 		<Stage>RoundOf16</Stage>
 		<HomeTeam>Croatia</HomeTeam>
 		<GuestTeam>Portugal</GuestTeam>
-		<HomeScore />
-		<GuestScore />
+		<HomeScore>0</HomeScore>
+		<GuestScore>1</GuestScore>
 	</ttMatchesRow>
 
 	<ttMatchesRow>
@@ -412,8 +412,8 @@
 		<Stage>RoundOf16</Stage>
 		<HomeTeam>France</HomeTeam>
 		<GuestTeam>RepublicOfIreland</GuestTeam>
-		<HomeScore />
-		<GuestScore />
+		<HomeScore>2</HomeScore>
+		<GuestScore>1</GuestScore>
 	</ttMatchesRow>
 	<ttMatchesRow>
 		<Order>41</Order>
@@ -422,8 +422,8 @@
 		<Stage>RoundOf16</Stage>
 		<HomeTeam>Germany</HomeTeam>
 		<GuestTeam>Slovakia</GuestTeam>
-		<HomeScore />
-		<GuestScore />
+		<HomeScore>3</HomeScore>
+		<GuestScore>0</GuestScore>
 	</ttMatchesRow>
 	<ttMatchesRow>
 		<Order>42</Order>
@@ -432,8 +432,8 @@
 		<Stage>RoundOf16</Stage>
 		<HomeTeam>Hungary</HomeTeam>
 		<GuestTeam>Belgium</GuestTeam>
-		<HomeScore />
-		<GuestScore />
+		<HomeScore>0</HomeScore>
+		<GuestScore>4</GuestScore>
 	</ttMatchesRow>
 
 	<ttMatchesRow>
