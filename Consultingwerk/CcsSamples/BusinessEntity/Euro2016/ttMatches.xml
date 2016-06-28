@@ -453,8 +453,8 @@
 		<Stage>RoundOf16</Stage>
 		<HomeTeam>England</HomeTeam>
 		<GuestTeam>Iceland</GuestTeam>
-		<HomeScore />
-		<GuestScore />
+		<HomeScore>1</HomeScore>
+		<GuestScore>2</GuestScore>
 	</ttMatchesRow>
 
 	<ttMatchesRow>
@@ -493,7 +493,7 @@
 		<Date>2016-07-03</Date>
 		<Stage>QuarterFinal</Stage>
 		<HomeTeam>France</HomeTeam>
-		<GuestTeam />
+		<GuestTeam>Iceland</GuestTeam>
 		<HomeScore />
 		<GuestScore />
 	</ttMatchesRow>
