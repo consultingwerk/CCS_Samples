@@ -48,6 +48,16 @@ CLASS Consultingwerk.CcsSamples.StartupManager.StartupManager
     END CONSTRUCTOR.
 
     /**
+     * Purpose: Disposes the object instance
+     * Notes:
+     */
+    METHOD PUBLIC VOID dispose ():
+
+        /* noop */
+
+    END METHOD.
+    
+    /**
      * Purpose: Returns the reference to the specified IManager instance.
      * Notes:
      * @param poServiceType The Progress.Lang.Class repersenting the required service.

@@ -49,11 +49,21 @@ CLASS Consultingwerk.CcsSamples.ServiceManager.ServiceManager
     END CONSTRUCTOR.
 
     /**
+     * Purpose: Disposes the object instance
+     * Notes:
+     */
+    METHOD PUBLIC VOID dispose ():
+
+        /* noop */
+
+    END METHOD.
+
+    /**
      * Purpose: Returns the service with the given type name
      * Notes:
      * @param poServiceClass The type (Interface) of the service to shut down
      */
-    METHOD PUBLIC CCS.Common.IService getService (poServiceClass AS Progress.Lang.Class):
+    METHOD PUBLIC Progress.Lang.Object getService (poServiceClass AS Progress.Lang.Class):
 
         RETURN THIS-OBJECT:getService(poServiceClass, "":U) .
 
@@ -65,8 +75,8 @@ CLASS Consultingwerk.CcsSamples.ServiceManager.ServiceManager
      * @param poServiceClass The type (Interface) of the service to shut down
      * @param pcInstanceName The name of the instance to shut down (may be "")
      */
-    METHOD PUBLIC CCS.Common.IService getService (poServiceClass AS Progress.Lang.Class,
-                                                  pcInstanceName AS CHARACTER):
+    METHOD PUBLIC Progress.Lang.Object getService (poServiceClass AS Progress.Lang.Class,
+                                                   pcInstanceName AS CHARACTER):
 
         DEFINE VARIABLE oInstanceType AS Progress.Lang.Class  NO-UNDO .
         DEFINE VARIABLE oInstance     AS Progress.Lang.Object NO-UNDO .
@@ -158,6 +168,18 @@ CLASS Consultingwerk.CcsSamples.ServiceManager.ServiceManager
         RETURN CAST (oInstance, IService) .
 
     END METHOD.
+
+    method public Progress.Lang.Object getService(input poService as class Progress.Lang.Class,
+                                                  input poScope as Ccs.ServiceManager.ILifecycleScope).
+
+    end method.
+
+    /* Destroys and flushes from any cache(s) objects scoped to the argument scope.
+       
+       @param ILifecycleScope A requested scope for which to stop services. */
+    method public void stopServices(input poScope as Ccs.ServiceManager.ILifecycleScope).  
+
+    end method.
 
     /**
      * Purpose: Initializes the Service

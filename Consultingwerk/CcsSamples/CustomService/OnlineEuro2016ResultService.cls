@@ -42,6 +42,15 @@ CLASS Consultingwerk.CcsSamples.CustomService.OnlineEuro2016ResultService
 
     END CONSTRUCTOR.
 
+    /**
+     * Purpose: Disposes the object instance
+     * Notes:
+     */
+    METHOD PUBLIC VOID dispose ():
+
+        /* noop */
+
+    END METHOD.
 
     /**
      * Purpose: Gets/refreshes the match results

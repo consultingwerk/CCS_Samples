@@ -35,6 +35,16 @@ CLASS Consultingwerk.CcsSamples.CustomService.Euro2016ResultService
     {Consultingwerk/CcsSamples/BusinessEntity/Euro2016/dsMatches.i}
 
     /**
+     * Purpose: Disposes the object instance
+     * Notes:
+     */
+    METHOD PUBLIC VOID dispose ():
+
+        /* noop */
+
+    END METHOD.
+
+    /**
      * Purpose: Returns the match results of the given date
      * Notes:
      * @param pdtDate The date to return results from

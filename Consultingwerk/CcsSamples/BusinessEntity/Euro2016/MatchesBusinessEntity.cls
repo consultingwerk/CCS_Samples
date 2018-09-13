@@ -51,6 +51,16 @@ CLASS Consultingwerk.CcsSamples.BusinessEntity.Euro2016.MatchesBusinessEntity
     END CONSTRUCTOR.
 
     /**
+     * Purpose: Disposes the object instance
+     * Notes:
+     */
+    METHOD PUBLIC VOID dispose ():
+
+        /* noop */
+
+    END METHOD.
+
+    /**
      * Purpose: Opens the Data Source query
      * Notes:
      * @param poRequest The IGetDataRequest instance with the getData request parameters
